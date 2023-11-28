@@ -1,23 +1,23 @@
 <?php
 
-namespace Hootlex\Friendships\Traits;
+namespace SebaCarrasco93\Friendships\Traits;
 
-use Hootlex\Friendships\Models\Friendship;
-use Hootlex\Friendships\Models\FriendFriendshipGroups;
-use Hootlex\Friendships\Status;
+use SebaCarrasco93\Friendships\Models\Friendship;
+use SebaCarrasco93\Friendships\Models\FriendFriendshipGroups;
+use SebaCarrasco93\Friendships\Status;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Event;
 
 /**
  * Class Friendable
- * @package Hootlex\Friendships\Traits
+ * @package SebaCarrasco93\Friendships\Traits
  */
 trait Friendable
 {
     /**
      * @param Model $recipient
      *
-     * @return \Hootlex\Friendships\Models\Friendship|false
+     * @return \SebaCarrasco93\Friendships\Models\Friendship|false
      */
     public function befriend(Model $recipient)
     {
@@ -175,7 +175,7 @@ trait Friendable
     /**
      * @param Model $recipient
      *
-     * @return \Hootlex\Friendships\Models\Friendship
+     * @return \SebaCarrasco93\Friendships\Models\Friendship
      */
     public function blockFriend(Model $recipient)
     {
@@ -213,7 +213,7 @@ trait Friendable
     /**
      * @param Model $recipient
      *
-     * @return \Hootlex\Friendships\Models\Friendship
+     * @return \SebaCarrasco93\Friendships\Models\Friendship
      */
     public function getFriendship(Model $recipient)
     {
