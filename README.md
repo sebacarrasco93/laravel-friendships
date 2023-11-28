@@ -22,33 +22,42 @@ This version fixes error: "Method Illuminate\Events\Dispatcher::fire does not ex
 First, install the package through Composer.
 
 ```php
-composer require hootlex/laravel-friendships
+composer require sebacarrasco93/laravel-friendships
 ```
 
 If you are using Laravel < 5.5, you need to add Hootlex\Friendships\FriendshipsServiceProvider to your `config/app.php` providers array:
+
 ```php
 Hootlex\Friendships\FriendshipsServiceProvider::class,
 ```
+
 Publish config and migrations
-```
+
+```sh
 php artisan vendor:publish --provider="Hootlex\Friendships\FriendshipsServiceProvider"
 ```
 Configure the published config in
+
+```sh
+config/friendships.php
 ```
-config\friendships.php
-```
+
 Finally, migrate the database
-```
+
+```sh
 php artisan migrate
 ```
 
 ## Setup a Model
+
 ```php
 use Hootlex\Friendships\Traits\Friendable;
+
 class User extends Model
 {
     use Friendable;
-    ...
+    
+    //
 }
 ```
 
