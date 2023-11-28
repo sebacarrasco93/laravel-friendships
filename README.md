@@ -28,13 +28,13 @@ composer require sebacarrasco93/laravel-friendships
 If you are using Laravel < 5.5, you need to add Hootlex\Friendships\FriendshipsServiceProvider to your `config/app.php` providers array:
 
 ```php
-Hootlex\Friendships\FriendshipsServiceProvider::class,
+SebaCarrasco93\Friendships\FriendshipsServiceProvider::class,
 ```
 
 Publish config and migrations
 
 ```sh
-php artisan vendor:publish --provider="Hootlex\Friendships\FriendshipsServiceProvider"
+php artisan vendor:publish --provider="SebaCarrasco93\Friendships\FriendshipsServiceProvider"
 ```
 Configure the published config in
 
@@ -51,7 +51,7 @@ php artisan migrate
 ## Setup a Model
 
 ```php
-use Hootlex\Friendships\Traits\Friendable;
+use SebaCarrasco93\Friendships\Traits\Friendable;
 
 class User extends Model
 {
