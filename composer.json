@@ -11,7 +11,7 @@
         {
             "name": "Seba Carrasco Poblete",
             "email": "sebacarrasco93@gmail.com"
-        },
+        }
     ],
     "autoload-dev": {
         "classmap": [
