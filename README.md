@@ -6,7 +6,7 @@
 This package gives Eloquent models the ability to manage their friendships.
 You can easily design a Facebook like Friend System.
 
-⚠️ This package was originally developed by Hootlex.
+⚠️ This package was originally developed by [Hootlex](https://github.com/hootlex). I changed namespace by SebaCarrasco93, to avoid conflicts with names if you have two packages installed, for example, upgrading from an old Laravel version.
 
 This version fixes error: "Method Illuminate\Events\Dispatcher::fire does not exist" in Laravel 10+ by changing it for "dispatch"
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Hootlex\Friendships;
+namespace SebaCarrasco93\Friendships;
 
 use Illuminate\Support\ServiceProvider;
 
